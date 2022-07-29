@@ -15,15 +15,11 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
   <link href="static/css/carousel.css" rel="stylesheet">
+  <link href="static/css/Accordian.css" rel="stylesheet">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-
-  <style>
- 
-  </style>
 </head>
 
 <body>
-
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
@@ -38,22 +34,20 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#education-nav">Education</a>
+              <a class="nav-link" href="#educationNav">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Experience">Experience</a>
+              <a class="nav-link" href="#ExperienceNav">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#skillsNav">Skills</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
   <main>
-
     <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -62,8 +56,7 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" id="background-image" style="background-image: url(static/images/caro5.jpg)"  >
-
+        <div class="carousel-item active" id="background-image" style="background-image: url(static/images/caro5.jpg)">
           <div class="container">
             <div class="carousel-caption text-start">
               <h1>Introduction.</h1>
@@ -78,12 +71,10 @@
                 multiple tasks and working under pressure. I am adaptable, ambitious, committed, customer-service
                 focused and
                 results-oriented.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
             </div>
           </div>
         </div>
-        <div class="carousel-item" id="background-image" style="background-image: url(static/images/caro4.jpg)">
-
+        <div class="carousel-item" id="background-image" style="background-image: url(static/images/caro1.jpg)">
           <div class="container">
             <div class="carousel-caption">
               <h1>About.</h1>
@@ -97,12 +88,11 @@
                   target="_blank">Ekap</a> Engineering machinists create precision industrial parts by using machine
                 tools to cut, shave and bore metal pieces. This job entails adjusting machine parts, measuring completed
                 products and calculating dimensions</p>
-              <p><a class="btn btn-lg btn-primary" href="https://codespace.co.za/">Learn more</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#References">References</a></p>
             </div>
           </div>
         </div>
-        <div class="carousel-item" id="background-image" style="background-image: url(static/images/caro7.jpg)">
-
+        <div class="carousel-item" id="background-image" style="background-image: url(static/images/caro2.jpg)">
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>Experience.</h1>
@@ -114,7 +104,6 @@
               <p>I worked as a machinist in a Engineering compony</p>
               <p>I was a Resort Manager in Borrelfontein located Mossel-bay</p>
               <p>I finished my Grade 12 in 2012</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -128,119 +117,129 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing"  id="education-nav">
-
-      <!-- Three columns of text below the carousel -->
+    <div class="container marketing">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4" id="educationNav">
           <img id="profile-photo" src="static/images/education.png" alt="education">
-
           <h2 class="fw-normal">Education</h2>
-          <li>
-            <ul>
+          <details class="style4">
+            <summary>Show <strong>More</strong> </summary>
+            <div class="content">
               <p>I Finished my Matric in 2012 And Started working at De-tect Unit Inspection that same year</p>
-            </ul>
-            <ul>
               <p>In 2014 i received my first training as a NDT inspector</p>
-            </ul>
-            <ul>
               <p>I Finished my Matric in 2012 And Started working at De-tect Unit Inspection that same year</p>
-            </ul>
-          </li>
-
-          <p><a onclick="brandonsFunction()" class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              <p>I Stated my work at Borrelfontein in 2017</p>
+              <p>I Started my journey in Mechanical Engineering in 2020</p>
+              <ul class="list-unstyled">
+                <li>NDT- Surface Technician:</li>
+                <li>Penetrant Testing Level 1)</li>
+                <li>Wall Thickness Testing Level 1)</li>
+                <li>Positive Material Identification Olympus Innov-x XRF PMI)</li>
+              </ul>
+            </div>
+          </details>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4" id="ExperienceNav">
           <img id="profile-photo" src="static/images/experience.png" alt="experience">
-
-          <h2 class="fw-normal" id="Experience-nav">Experience</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img id="profile-photo" src="static/images/Skills.jpg" alt="Skills">
-
-          <h2 class="fw-normal" id="skills-nav">Skills</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow
-              your mind.</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-            here.</p>
+          <h2 class="fw-normal">Experience</h2>
+          <details class="style4">
+            <summary>Show <strong>More</strong> </summary>
+            <div class="content">
+              <p>Quality control Inspection</p>
+              <p>Managing big projects</p>
+              <p>Works well in Teams</p>
+              <p>Very adaptable has fun learning new things</p>
+              <p>excels in everything i pursue</p>
+              <p>Great fisherman</p>
+              <p>Industry skills</p>
+              <p>Pressure management</p>
+              <p>Teamwork</p>
+              <p>Creativity</p>
+            </div>
+          </details>
         </div>
-        <div class="col-md-5">
-          <img src="static/images/gears.jpg" id="Bottem-img"/>
-
+        <div class="col-lg-4" id="skillsNav">
+          <img id="profile-photo" src="static/images/Skills.jpg" alt="Skills">
+          <h2 class="fw-normal">Skills</h2>
+          <details class="style4">
+            <summary>Show <strong>More</strong> </summary>
+            <div class="content">
+              <ul class="list-unstyled">
+                <h3>De-tect Unit Inspection</h3>
+                <li>
+                  Managing Magnetic Particle Inspection, Liquid Penetrant Testing: Hardness testing, positive material
+                  identification and Wall Thickness: Testing on the HP Pipe Work, Thick wall Components and inside the
+                  boiler.
+                </li>
+                <li>Ensuring quality built scaffolding on site and safe working conditions.</li>
+                <li>Stock keeping of consumables and equipment per Outage.</li>
+                <li>Daily progress update sheets.</li>
+                <li>
+                  Pre-shut company authorization tests (practical and theory) to ensure all technicians understand
+                  company
+                  technique sheets.
+                </li>
+              </ul>
+              <h3>EKAP ENGINEERING KEYS AND PINS</h3>
+              <ul class="list-unstyled">
+                <li> Lathe</li>
+                <li> Milling machine</li>
+                <li> Internal grinder</li>
+                <li> Cylindrical grinder</li>
+                <li> Service grinder</li>
+                <li>Slotter machine</li>
+                <li>Press operator</li>
+                </ol>
+              </ul>
+            </div>
+          </details>
         </div>
       </div>
-
       <hr class="featurette-divider">
-
+      <div id="References" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Ekap-Engineering. <span class="text-muted">It’ll blow
+              your mind.</span></h2>
+          <p class="lead">Some great Experience working with Lathe Machine's and Building Gear , Shafts, and Rotors</p>
+        </div>
+        <div class="col-md-5">
+          <img src="static/images/gears.jpg" class="img-fluid" id="Bottem-img" />
+        </div>
+      </div>
+      <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, De-tect Unit Inspection . <span class="text-muted">See
+              for
               yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-            layout would work with some actual real-world content in place.</p>
+          <p class="lead">I was working in as a contactor for multiple Companies such as Sasol and Eskom , we were doing
+            Inspection work on all the sites that were going on maintenance shutdowns and Go's-(General overall)</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="static/images/inspect.jpg" id="Bottem-img"/>
-
+          <img src="static/images/inspect.jpg" class="img-fluid" id="Bottem-img" />
         </div>
       </div>
-
       <hr class="featurette-divider">
-
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span>
+          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Borrelfontein
+              Resort.</span>
           </h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
+          <p class="lead">And yes, this is the place i probably miss the most , not just the work but how beautiful
+            Gouritsmond really is, As soon as my Coding journey Starts i will definitly consider moving back to the
+            coast.</p>
         </div>
         <div class="col-md-5">
-          <img src="static/images/light.jpg" id="Bottem-img"/>
-
+          <img src="static/images/light.jpg" class="img-fluid" id="Bottem-img" />
         </div>
       </div>
-
       <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-
-    <!-- FOOTER -->
+    </div>
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p>&copy; 2017–2022 Brandon Company, Inc. &middot;
     </footer>
   </main>
-
-<script>
-    function brandonsFunction  () {
-      alert('Hello!');
-    }
-</script>
 </body>
 
 </html>
